@@ -355,6 +355,7 @@ header {
     border: 5px solid;
 }
 
+/* Fees table  */
 .fees-table  {
     /* font-weight: bold; */
     font-size: 30px;
@@ -376,7 +377,35 @@ header {
     vertical-align: top
 } */
 
+/* Cart table */
 .cart-table-product-description {
     width: 80%;
     text-align: left;
+}
+
+/* Checkout */
+.checkout-upper-title {
+    font-weight: bold;
+    font-style: italic;
+    font-size: 30px;
+    font-family: 'Orbitron', sans-serif;
+    font-family: 'Rajdhani', sans-serif;
+}
+
+.checkout-email {
+    margin-right: 25px;
+}
+
+.checkout-page-section-two {
+    font-size: 20px;
+    font-family: 'Orbitron', sans-serif;
+    font-family: 'Rajdhani', sans-serif;   
+}
+
+.checkout-lower-title {
+    font-weight: bold;
+    font-style: italic;
+    font-size: 19px;
+    font-family: 'Orbitron', sans-serif;
+    font-family: 'Rajdhani', sans-serif
 }
