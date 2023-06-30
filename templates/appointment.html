@@ -1,0 +1,164 @@
+{% extends 'base.html' %}
+
+{% block main %}
+<main>
+    <section class="appointment-page-section-one">
+        <div class="container">
+            <h5 class="appointment-paragraph-title">
+                Make a Booking
+            </h5>
+            <h3 class="appointment-location-selection">
+                Select Your Location
+            </h3>
+            <div class="row">
+                <div class="col-lg-4">
+                    <!-- First card -->
+                    <div class="card text-center">
+                        <img class="card-img-top" src="{{ url_for('static', filename='images/project_logo3.jpg') }}"
+                            alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title"> NSW Clinic</h5>
+                            <p class="card-text">5/9 Hollinsworth Road, Marsden Park NSW 2765</p>
+                            <p class="card-text">Phone: 9200 2500</p>
+                            <a href="https://goo.gl/maps/NdEtNadAGKr4fDvk9" class="btn btn-info" target="_blank">View
+                                map</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Second card -->
+                <div class="col-lg-4">
+                    <div class="card text-center">
+                        <img class="card-img-top" src="{{ url_for('static', filename='images/project_logo2.jpg') }}"
+                            alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title"> QLD Clinic</h5>
+                            <p class="card-text"> 80 Bryants Road, Loganholme Qld 4129 </p>
+                            <p class="card-text"> Phone: 3200 2500</p>
+                            <a href="https://goo.gl/maps/axFBQUKnKpZGXDc88" class="btn btn-info" target="_blank">View
+                                map</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4">
+                    <!-- Third card -->
+                    <div class="card text-center">
+                        <img class="card-img-top" src="{{ url_for('static', filename='images/project_logo5.jpg') }}"
+                            alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title"> VIC Clinic</h5>
+                            <p class="card-text"> 30 Remount Way, Cranbourne VIC 3977 </p>
+                            <p class="card-text"> Phone: 9200 2050</p>
+                            <a href="https://goo.gl/maps/tuACKqvauP4vT48dA" class="btn btn-info" target="_blank">View
+                                map</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Second section (fees) -->
+    <script>
+        function submitFormByName(product_id) {
+            var form = document.getElementsByName("form0")[0];
+            form.submit();
+        }
+    </script>
+    <section class="appointment-page-section-two">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="table-responsive-lg">
+
+                        <h5 class="fees-table">
+                            Our Clinic Fees
+                        </h5>
+
+                        <table class="table-hover w-auto">
+                            <thead>
+                                <tr>
+                                    <th scope="col"></th>
+                                    <th scope="col">Initial Consultation (40mins)</th>
+                                    <th scope="col"> Subsequent Consultation (30mins)</th>
+                                </tr>
+                            </thead>
+
+                            <tbody>
+                                <form method="POST" name="form0" action="{{ url_for('product_details') }}">
+                                    <tr onclick="submitFormByName(0);">
+                                        <th scope="row" onclick="submitFormByName(0);"> Principal Physiotherapist</th>
+                                        <td onclick="submitFormByName(0);">$130</td>
+                                        <td onclick="submitFormByName(0);">$110</td>
+                                        <input type="hidden" name="product_id" value="1">
+                                    </tr>
+                                </form>
+                                <tr>
+                                </tr>
+                                <form action="{{ url_for('product_details') }}" method="POST">
+                                    <tr onclick="submitFormByName(0);">
+                                        <th scope="row"> Practice Physiotherapist</th>
+                                        <td>$125</td>
+                                        <td>$105</td>
+                                        <input type="hidden" name="product_id" value="1">
+                                    </tr>
+                                </form>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <table class="table table-hover">
+
+                        <h5 class="fees-table">
+                            Group Physiotherapy Fees
+                        </h5>
+
+                        <thead>
+                            <ul>
+                                <li>
+                                    Compulsory initial assessment required for group exercise physiotherapy classes,
+                                    please see pricing above.
+                                </li>
+                                <li>
+                                    The pricing* for our physiotherapy classes allows you to pay as you go or buy a
+                                    class package:
+                                </li>
+                            </ul>
+                        </thead>
+                        <tbody>
+                            <tr onclick="submitFormByName(0);">
+                                <th scope="row"> Number of classes</th>
+                                <td>20</td>
+                                <td>32</td>
+                                <td>58</td>
+                            </tr>
+                            <tr onclick="submitFormByName(0);">
+                                <th scope="row"> Price</th>
+                                <td>$350</td>
+                                <td>$550</td>
+                                <td>$990</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!--form action="/add_to_cart" method="POST">
+            {{ add_to_cart_form.csrf_token }}
+            <label for="product_id">Product ID:</label>
+            <input type="text" id="product_id" name="product_id" required>
+            <br>
+            <label for="quantity">Quantity:</label>
+            <input type="number" id="quantity" name="quantity" required>
+            <br>
+            <input type="submit" value="Add to Cart">
+        </form-->
+
+
+</main>
+{% endblock %}

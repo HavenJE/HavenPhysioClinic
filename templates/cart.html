@@ -1,0 +1,57 @@
+{% extends 'base.html' %}
+
+{% block main %}
+    <main>
+        <!-- Section two - upper part including the 3 images -->
+        <section class="muscolo-page-section-two">
+            <div class="container">
+                <h2 class="paragraph-title">
+                    Products included in the cart:
+                </h2>
+                <div class="row">
+                    <div class="col-lg-6">
+                        <p>
+                            <table>
+                                <tr>
+                                    <th>Product</th>
+                                    <th class="cart-table-quantity">Quantity</th>
+                                    <th></th>
+                                </tr>
+                                {% for cart_item in cart_items %}
+                                <tr>
+                                    <td class="cart-table-product-description">{{ cart_item.product.name }}</td>
+                                    <td class="cart-table-quantity">{{ cart_item.quantity }}</td>
+                                    <td>
+                                        <form action="/remove_from_cart" method="POST" style="display:inline;">
+                                            {{ add_to_cart_form.csrf_token }}
+                                            <input type="hidden" name="cart_item_id" value="{{ cart_item.id }}">
+                                            <button type="submit">Remove</button>
+                                        </form>
+                                    </td>
+                                </tr>
+                                {% endfor %}
+                                <tr><td>&nbsp;</td></tr>
+                                <tr><td>&nbsp;</td></tr>
+                                <tr><td>&nbsp;</td></tr>
+                                <tr><td>&nbsp;</td></tr>
+                            </table>
+                        </p>
+                        <p align="rigth">
+                            <table>
+                                <tr>
+                                    <td class="cart-table-product-description">&nbsp;</td><td class="cart-table-quantity">&nbsp;</td>
+                                    <td>
+                                        <form action="{{ url_for('do_checkout') }}" method="POST">
+                                            {{ add_to_cart_form.csrf_token }}
+                                            <button type="submit">Checkout</button>
+                                        </form>
+                                    </td>
+                                </tr>
+                            </table>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+{% endblock %}

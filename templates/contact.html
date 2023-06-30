@@ -1,0 +1,135 @@
+{% extends 'base.html' %}
+
+{% block main %}
+    <main>
+        <section class="upper-part">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8">
+                        <div>
+                            <h3 class="contact-locations-title"> Our clinic Locations below:
+                            </h3>
+                        </div>
+                        <div>
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-lg-4">
+                                        <h4 class="states-title">
+                                            NSW
+                                        </h4>
+                                        <p class="contact-clinic-location">
+                                            5/9 Hollinsworth Road, Marsden Park NSW 2765
+                                        </p>
+                                        <p class="clinic-number">
+                                            Phone: 9200 2500
+                                        </p>
+                                    </div>
+
+                                    <div class="col-lg-4">
+                                        <h4 class="states-title">
+                                            QLD
+                                        </h4>
+                                        <p class="contact-clinic-location">
+                                            80 Bryants Road, Loganholme Qld 4129
+                                        </p>
+                                        <p class="clinic-number">
+                                            Phone: 3200 2500
+                                        </p>
+                                    </div>
+
+                                    <div class="col-lg-4">
+                                        <h4 class="states-title">
+                                            VIC
+                                        </h4>
+                                        <p class="contact-clinic-location">
+                                            30 Remount Way, Cranbourne VIC 3977
+                                        </p>
+                                        <p class="clinic-number">
+                                            Phone: 9200 2050
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Appointment button -->
+        <section class="home-button">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <a class="btn btn-info" href="appointment.html" role="button">Book an appointment today</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact form -->
+        <section class="contact-form">
+            <div class="container">
+
+                <h3 class="form-title">Get in touch with us by submitting the details below:
+                </h3>
+
+                <form class="needs-validation" novalidate>
+
+                    <div class="form-group">
+                        <div class="col-md-6 mb-3">
+                            <label for="validationServer01">First name</label>
+                            <input type="text" class="form-control" id="validationServer01" placeholder="" value=""
+                                required>
+                            <div class="valid-feedback">
+                                Looks good!
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="col-md-6 mb-3">
+                            <label for="validationServer02">Last name</label>
+                            <input type="text" class="form-control" id="validationServer02" placeholder="" value=""
+                                required>
+                            <div class="valid-feedback">
+                                Looks good!
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="col-md-6 mb-3">
+                            <label for="validationServer01">Email Address</label>
+                            <input type="email" class="form-control" id="validationServer01" placeholder="" value=""
+                                required>
+                            <div class="valid-feedback">
+                                Looks good!
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="col-md-6 mb-3">
+                            <label for="validationServer02">Contact Number</label>
+                            <input type="number" class="form-control" id="validationServer02" placeholder="" value=""
+                                required>
+                            <div class="valid-feedback">
+                                Looks good!
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 mb-3">
+                        <div class="form-group">
+                            <label for="exampleFormControlTextarea1">Message</label>
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                        </div>
+                    </div>
+                    <button class="btn btn-dark" type="submit">Submit form</button>
+                </form>
+            </div>
+
+        </section>
+    </main>
+{% endblock %}

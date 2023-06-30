@@ -1,0 +1,382 @@
+
+header {
+    margin-bottom: 180px;
+}
+
+.home-section-one {
+    background-color:rgb(17, 160, 179);
+    margin-top: 180px;
+}
+
+.nav-link {
+    margin-right: 50px;
+}
+
+.navbar-brand {
+    font-size: large;
+}
+
+/* Home page - first-section  */
+.assessment-img {
+    /* object-position: 50% 50%; */
+    width: 70vh;
+    height: 50vh;
+}
+
+.home-section-one {
+    font-size: 25px;
+    color: antiquewhite;
+    margin: 40px 0;
+    width: 100%;
+    height: auto;
+}
+
+.first-section {
+    margin: 20px 20px 20px;
+}
+
+.home-title, .page-title {
+    color: rgb(230, 230, 36);
+    font-size: 37px;
+
+}
+
+.home-paragraph, .page-paragraph {
+    font-size: 25px;
+    color: antiquewhite;
+    /* margin: 40px 20px; */
+    width: 100%;
+    height: auto;
+}
+
+/* Navbar  */
+.logo {
+    border-radius: 50%;
+}
+
+.navbar-brand {
+    font-size: 35px;
+    font-family: 'Orbitron', sans-serif;
+    font-family: 'Rajdhani', sans-serif;
+}
+
+.nav-link {
+    font-size: 25px;
+    font-family: 'Orbitron', sans-serif;
+    font-family: 'Rajdhani', sans-serif;
+}
+
+/* Home page - section two - locations & business hours */
+.states-title, .location-title {
+    font-weight:bold;
+     
+}
+
+.home-section-two {  
+    color: black;
+    margin-top: 80px;
+    /* margin-bottom: 80px; */
+
+    font-family: 'Orbitron', sans-serif;
+    font-family: 'Oswald', sans-serif;
+    font-family: 'Rajdhani', sans-serif;
+
+    width: 100%;
+    height: auto;
+    /* border: solid 5px black; */
+    /* background-color:rgb(17, 160, 179); */
+}
+
+.clinic-address, td, tr, .clinic-number {
+    font-size: 20px;
+}
+
+/* Footer */
+.footer {
+    margin-top: 50px;
+    background-color: black;
+    font-size: 18px;
+    color: antiquewhite;
+    
+    align-items: center;
+    width: 100%;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+}
+
+.footer .col-lg-3 {
+   text-align: center;
+   align-items: center;
+}
+
+.footer-logo, .footer-copyright-title {
+    margin-top: 40px;
+    font-size: 20px;
+}
+
+.footer-item-link, .copyright-links {
+    color: antiquewhite;
+}
+
+.quick-links-title {
+    font-size: 16px;
+}
+
+.github-link, .linkedIn-link, .footer-ul {
+    list-style-type: none;
+}
+
+.github-link, .github-icon {
+    display: inline-block;
+}
+
+.linkedIn-link, .lindkedIn-icon {
+    display: inline-block;
+}
+
+.linkedIn-link {
+    margin-bottom: 20px;
+}
+
+/* common pages styling */
+.page-section-one {
+    padding-bottom: 40px;
+    background-color:rgb(17, 160, 179);
+    width: 100%;
+    height: auto;
+    margin: 40px 0px;
+    padding: 10px;
+ 
+}
+
+.page-title {
+    font-size: 25px;
+    margin-top: 25px;
+    padding-bottom: 15px;
+}
+
+.page-span {
+    color: rgb(230, 230, 36);
+    font-weight: bold;
+}
+
+.page-paragraph {
+    font-size: 20px;
+}
+
+.paragraph-title, .search-bar-title {
+    margin-top: 10px;
+    font-size: 24px;
+    font-style: italic;
+    font-family: 'Orbitron', sans-serif;
+    font-family: 'Rajdhani', sans-serif;
+    font-weight: bold;
+}
+
+/* image slider */
+/* .d-block {
+    margin-top: 50px;
+    width: 70vh;
+    height: auto;
+} */
+
+/* .col-lg-6 {
+    padding: 0px 0px;
+    margin: 0px 0px;
+} */
+
+/* Neurotherapy page */
+.page-section-two  {
+    font-size: 20px;
+    font-family: 'Orbitron', sans-serif;
+    font-family: 'Rajdhani', sans-serif;
+} 
+
+.middle-list, .third-list {
+    margin-top: 10px;
+}
+
+.neuro-section-two-image {
+    background-size: cover;
+    background-image: url(./img/lounge\ stretch.jpg);
+    
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 50vh;
+    border: 5px solid black;
+}
+
+
+/* Musculokeletal page */
+.muscolo-page-section-two {
+    font-size: 20px;
+    font-family: 'Orbitron', sans-serif;
+    font-family: 'Rajdhani', sans-serif;   
+}
+
+.d-block {
+    width: 100vh;
+    height: 50vh;
+    margin: 0px 0px;
+    padding: 0px 0px;
+}
+
+.muscolo-page-section-three {
+    /* border: 3px solid black; */
+    font-size: 20px;
+    font-family: 'Orbitron', sans-serif;
+    font-family: 'Rajdhani', sans-serif;
+}
+
+.page-section-two-image {
+    margin-top: 5px;
+    width: 100%;
+    height: auto;
+    display: flex;
+}
+
+/* .carousel-inner {
+    
+    width: 100%;
+    height: auto;
+} */
+
+/* Contact page */
+.upper-part {
+    margin-top: 50px;
+    background-color:rgb(12, 12, 12);
+    font-size: 25px;
+    color: rgb(255, 253, 253);
+    /* margin: 40px 20px; */
+    width: 100%;
+    height: auto;
+}
+
+.contact-locations-title {
+    margin: 35px 0px;
+}
+
+.contact-clinic-location, .clinic-number {
+    font-size: 18px;
+    margin-left: 10px;
+}
+
+.col-lg-4 > .clinic-number {
+    margin-bottom: 50px;
+}
+
+.contact-form {
+    margin: 50px 0px;
+}
+
+/* Form section */
+.form-title {
+    margin-bottom: 30px;
+}
+
+/* Book appointment button */
+.btn {
+   margin: 10px;
+   color: rgb(230, 230, 36);
+   font-weight: bold;
+   font-size: 20px;
+}
+
+/* Appointment page */
+.appointment-location-selection {
+    margin: 20px 0px;
+    font-size: 25px;
+    font-style: italic;
+    font-weight: bold;
+    font-family: 'Orbitron', sans-serif;
+    font-family: 'Rajdhani', sans-serif;
+    align-content: center;
+}
+
+.appointment-paragraph-title {
+    color: rgb(230, 230, 36);
+    margin-top: 25px;
+    font-size: 30px;
+    font-style: italic;
+    font-family: 'Orbitron', sans-serif;
+    font-family: 'Rajdhani', sans-serif;
+    align-content: center;
+}
+
+/* Bootstrap card */
+.appointment-page-section-one {
+    padding-bottom: 40px;
+    background-color:rgb(17, 160, 179);
+    width: 100%;
+    height: auto;
+    margin: 40px 0px;
+    /* padding: 10px; */
+  
+}
+
+.card-img-top {
+    width: 30vh;
+    height: auto;
+    /* padding-left: 60px; */
+    align-items: center;
+
+}
+
+
+.card {
+    margin: 20px 80px;
+    width: 18.2rem;  
+    /* border: 3px solid black; */
+}
+
+.card:hover {
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    transform: scale(1.03);
+    transition: all 1s ease;
+    /* border: 3px solid rgb(109, 96, 96); */
+}
+
+/* Fees tables */
+.appointment-page-section-two  {
+    
+    margin: 40px 30px;
+    padding: 20px;
+    font-size: 20px;
+    font-family: 'Orbitron', sans-serif;
+    font-family: 'Rajdhani', sans-serif;
+}
+
+.appointment-page-section-two > .row {
+    border: 5px solid;
+}
+
+.fees-table  {
+    /* font-weight: bold; */
+    font-size: 30px;
+    padding: 0px 10px;
+    /* border: 5px solid; */
+    
+}
+
+.table-hover {
+    /* border: 5px solid; */
+    margin: 30px 5px;
+    width: 100%;
+    height: auto;
+    align-content: ce;
+}
+
+/* .cart-table-quantity {
+    text-align: center;
+    vertical-align: top
+} */
+
+.cart-table-product-description {
+    width: 80%;
+    text-align: left;
+}

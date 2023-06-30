@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+
+{% block main %}
+    <main>
+        <!-- Section two - upper part including the 3 images -->
+        <section class="muscolo-page-section-two">
+            <div class="container">
+                <h2 class="paragraph-title">
+                    Enter your personal information:
+                </h2>
+                <div class="row">
+                    <div class="col-lg-6">
+                        <p>
+                            <form action="{{ url_for('proc_checkout') }}" method="POST">
+                                {{ add_to_cart_form.csrf_token }}
+                                <label for="first_name">First Name:</label>
+                                <input type="text" id="first_name" name="first_name" required><br><br>
+
+                                <label for="last_name">Last Name:</label>
+                                <input type="text" id="last_name" name="last_name" required><br><br>
+
+                                <label for="cell_phone">Cell Phone:</label>
+                                <input type="text" id="cell_phone" name="cell_phone" required><br><br>
+
+                                <label for="email">&nbsp;&nbsp;&nbsp;Email:</label>
+                                <input type="email" id="email" name="email" required><br><br>
+
+                                <button type="submit">Save</button>
+                            </form>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+{% endblock %}

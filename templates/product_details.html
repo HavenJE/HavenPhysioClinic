@@ -1,0 +1,57 @@
+{% extends 'base.html' %}
+
+{% block main %}
+<main>
+    <!-- Section two - upper part including the 3 images -->
+    <section class="muscolo-page-section-two">
+        <div class="container">
+            <h2 class="paragraph-title">
+                Treatment Details:
+            </h2>
+            <div class="row">
+                <div class="col-lg-10">
+                    <p>
+                    <table>
+                        {% for item in cart_items %}
+                        <form action="/add_to_cart" method="POST" style="display:inline;">
+                            {{ add_to_cart_form.csrf_token }}
+                            <tr>
+                                <td class="cart-table-product-description">{{ item.name }}<br>{{ item.desc1 }}</td>
+                                <td class="cart-table-quantity"><b>$ {{ item.price }}</b></td>
+                                <td>&nbsp;</td>
+                                <td class="cart-table-quantity">
+                                    <label for="quantity">Qty:</label>
+                                    <input type="number" id="quantity" name="quantity" min="1" style="width: 50px;">
+                                <td>&nbsp;</td>
+                                <td class="cart-table-quantity">
+                                    <input type="hidden" name="product_id" value="{{ item.product_id }}">
+                                    <input type="submit" value="Add to Cart" style="width: 110px;">
+                                </td>
+                            </tr>
+                        </form>
+                        <tr>
+                            <td>&nbsp;</td>
+                        </tr>
+                        {% endfor %}
+                    </table>
+                    </p>
+                    <p align="rigth">
+                    <table>
+                        <tr>
+                            <td class="cart-table-product-description">&nbsp;</td>
+                            <td class="cart-table-quantity">&nbsp;</td>
+                            <td>
+                                <form action="{{ url_for('cart') }}" method="POST">
+                                    {{ add_to_cart_form.csrf_token }}
+                                    <button type="submit">Checkout</button>
+                                </form>
+                            </td>
+                        </tr>
+                    </table>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+{% endblock %}
